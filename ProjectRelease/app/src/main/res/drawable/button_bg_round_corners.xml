@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" android:padding="10dp">
+            <solid android:color="#80246710"/>
+            <stroke android:color="#1c1108" android:width="2dp" />
+            <!--corners allow us to make the rounded corners button-->
+            <corners
+                android:bottomRightRadius="100dp"
+                android:bottomLeftRadius="10dp"
+                android:topLeftRadius="100dp"
+                android:topRightRadius="10dp"/>
+        </shape>
+
+    </item>
+</selector>

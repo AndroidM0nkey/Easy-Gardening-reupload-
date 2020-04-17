@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.ss.deadlineslul.Timetables">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.18"
+        android:textSize="15dp"
+        android:hint="Площадь посева"
+        android:textColorHint="#000000"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.82"
+        android:hint="Возраст в нед."
+        android:textSize="15dp"
+        android:textColorHint="#000000"/>
+
+
+    <TextView
+        android:id="@+id/textViewKart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:text="Картофель"
+        android:visibility="invisible"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--- <test pattern="SECAM" /><test pattern="NTSC" /> -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:text="18 Неделя"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:onClick="Change2"
+        android:text="Сохранить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonM"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:onClick="Change"
+        android:text="Изменить/Удалить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        android:visibility="visible" />
+    <!--- <test pattern="SECAM" /><test pattern="NTSC" /> -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openText"
+        android:text="Load"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/veggarden"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        tools:ignore="ContentDescription"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:id="@+id/textViewKar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Картофель"
+        android:textColor="#1c1108" android:fontFamily="@font/ptm"
+        android:textSize="40dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+
+
+
+    <TextView
+        android:id="@+id/textViewMork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:text="Морковь"
+        android:textSize="40dp"
+        android:textColor="#1c1108" android:fontFamily="@font/ptm"
+        android:visibility="visible"/>
+
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.18"
+        android:textSize="15dp"
+        android:hint="Площадь посева"
+        android:textColorHint="#000000"/>
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.82"
+        android:hint="Возраст в нед."
+        android:textSize="15dp"
+        android:textColorHint="#000000"/>
+
+
+
+
+    <TextView
+        android:id="@+id/textViewSvekla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:text="Свекла"
+        android:textSize="40dp"
+        android:textColor="#1c1108" android:fontFamily="@font/ptm"
+        android:visibility="visible"/>
+
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.18"
+        android:textSize="15dp"
+        android:hint="Площадь посева"
+        android:textColorHint="#000000"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.82"
+        android:hint="Возраст в нед."
+        android:textSize="15dp"
+        android:textColorHint="#000000"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/buttonD1"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:text="Удалить"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:id="@+id/buttonD2"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:text="Удалить"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3375"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonD3"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:text="Удалить"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>
